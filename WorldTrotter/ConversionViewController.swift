@@ -60,6 +60,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //fahrenheit editing changed
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
         if let text = textField.text, let value = Double(text) {
             fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
