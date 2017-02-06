@@ -91,21 +91,32 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="566" y="316"/>
+            <point key="canvasLocation" x="374" y="314"/>
         </scene>
         <!--Map-->
         <scene sceneID="OfB-yG-RBA">
             <objects>
-                <viewController id="Jyj-5d-EdE" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="KRX-2D-A6T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController id="Jyj-5d-EdE" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Cjp-Io-bt9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evz-bX-yoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="314.39280359820094"/>
+            <point key="canvasLocation" x="2273" y="315"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="N63-n4-mZZ">
+            <objects>
+                <viewController id="F77-p5-SHt" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="RNY-jz-nuT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <tabBarItem key="tabBarItem" title="Web" image="CocoaHeads" id="GNz-ao-BwG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIz-2k-lL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="358"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vgQ-MN-SpP">
@@ -113,20 +124,23 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Txo-cx-Oel" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gOh-r0-oPT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Jyj-5d-EdE" kind="relationship" relationship="viewControllers" id="q7p-6h-4Al"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rg1-Dx-y5w"/>
+                        <segue destination="Jyj-5d-EdE" kind="relationship" relationship="viewControllers" id="q7p-6h-4Al"/>
+                        <segue destination="F77-p5-SHt" kind="relationship" relationship="viewControllers" id="1oF-rm-yZC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g47-PA-eLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288.8" y="314.39280359820094"/>
+            <point key="canvasLocation" x="1289" y="-379"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CocoaHeads" width="280" height="255"/>
         <image name="ConvertIcon" width="49" height="33"/>
         <image name="MapIcon" width="49" height="33"/>
     </resources>
