@@ -60,3 +60,38 @@ class MapViewController: UIViewController {
     }
 }
 
+//*************THIS IS TO GET THE USERS LOCATION**************
+
+/*
+ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    var mapViw: MKMapView!
+    
+    //where should this appear in your code?? PROBABLY IN LOADVIEW()
+    //look above??
+    self.mapView.delegate = self
+    mapView.delegate = self same as above we think...
+ 
+    self.mapView.showsUserLocation = true
+    
+    
+}
+
+let locationManager = CLLocationManager()
+
+locationManager = CLLocationManager()
+locationManager.delegate = self
+locationManager.desiredAccuracy = kCLLocationAccuracyBest
+locationManager.requestAlwaysAuthorization()
+locationManager.startUpdatingLocation()
+
+*/
+
+func mapViewWillStartLocatingUser(_ mapView: MKMapView) {
+    print("Start Loading.")
+}
+
+func mapViewDidStopLocatingUser(_ mapView: MKMapView) {
+    print("Stop Loading.")
+}
+
