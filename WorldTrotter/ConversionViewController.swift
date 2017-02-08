@@ -69,4 +69,22 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func viewWillAppear(_: Bool) {
+        let now = Date()
+        let cal = Calendar.current
+        let hour = cal.component(.hour, from: now)
+        //let minute = cal.component(.minute, from: now)
+        //let second = cal.component(.second, from: now)
+        print(now)
+        print("Cal hour: ")
+        print(hour)
+        
+        if hour > 7 && hour < 17 {
+            self.view.backgroundColor = UIColor.lightGray
+        } else {
+            self.view.backgroundColor = UIColor.darkGray
+        }
+        
+    }
+    
 }
