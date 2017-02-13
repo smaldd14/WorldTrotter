@@ -9,8 +9,10 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController {//MKMapViewDelegate
     var mapView: MKMapView!
+    
+    //let locationManager = CLLocationManager()
     
     override func loadView() {
         //Create a map view
@@ -18,6 +20,7 @@ class MapViewController: UIViewController {
         
         //Set it as *the* view of this view controller
         view = mapView
+        //locationManager.requestAlwaysAuthorization()
         
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
@@ -63,7 +66,7 @@ class MapViewController: UIViewController {
 //*************THIS IS TO GET THE USERS LOCATION**************
 
 /*
- class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+ class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapViw: MKMapView!
     
