@@ -17,6 +17,7 @@
 		BF1AF1541E48F24700230EE4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1AF1531E48F24700230EE4 /* MapKit.framework */; };
 		BF1AF15A1E49189800230EE4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1AF1591E49189800230EE4 /* MapViewController.swift */; };
 		BF1AF15C1E491F2900230EE4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1AF15B1E491F2900230EE4 /* WebViewController.swift */; };
+		BFFCFA3F1E523351001E7E68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFFCFA411E523351001E7E68 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		BF1AF15B1E491F2900230EE4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../WebViewController.swift; sourceTree = "<group>"; };
 		BF1AF15E1E522CBE00230EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BF1AF15F1E522D4400230EE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		BFFCFA401E523351001E7E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BFFCFA421E523391001E7E68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BFFCFA431E523392001E7E68 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		6BB4AB421B7A5D4200967615 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				BFFCFA411E523351001E7E68 /* Localizable.strings */,
 				BF1AF15B1E491F2900230EE4 /* WebViewController.swift */,
 				6BB4AB431B7A5D4200967615 /* AppDelegate.swift */,
 				6BB4AB711B7BD4C500967615 /* ConversionViewController.swift */,
@@ -233,6 +238,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 6BB4AB371B7A5D4200967615;
 			productRefGroup = 6BB4AB411B7A5D4200967615 /* Products */;
@@ -252,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB4AB4E1B7A5D4200967615 /* LaunchScreen.storyboard in Resources */,
+				BFFCFA3F1E523351001E7E68 /* Localizable.strings in Resources */,
 				6BB4AB4B1B7A5D4200967615 /* Assets.xcassets in Resources */,
 				6BB4AB491B7A5D4200967615 /* Main.storyboard in Resources */,
 			);
@@ -333,6 +340,16 @@
 				6BB4AB4D1B7A5D4200967615 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BFFCFA411E523351001E7E68 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFCFA401E523351001E7E68 /* Base */,
+				BFFCFA421E523391001E7E68 /* en */,
+				BFFCFA431E523392001E7E68 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
