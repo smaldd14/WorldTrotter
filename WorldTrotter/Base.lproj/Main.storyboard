@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,25 +22,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Fahrenheit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caI-Yo-5JC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Fahrenheit" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caI-Yo-5JC">
                                 <rect key="frame" x="32.5" y="120" width="310" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM5-UI-kgl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM5-UI-kgl">
                                 <rect key="frame" x="128.5" y="171" width="119" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU5-kP-97a">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU5-kP-97a">
                                 <rect key="frame" x="129.5" y="222" width="116.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Celsius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-M3-FYV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees Celsius" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-M3-FYV">
                                 <rect key="frame" x="58.5" y="314" width="258" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,15 +65,23 @@
                         <constraints>
                             <constraint firstItem="nEB-A3-sAJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="50M-hN-aQf"/>
                             <constraint firstItem="caI-Yo-5JC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5h1-dz-MAr"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="XU5-kP-97a" secondAttribute="trailing" id="7e9-Rj-fOw"/>
                             <constraint firstItem="L1J-M3-FYV" firstAttribute="top" secondItem="XU5-kP-97a" secondAttribute="bottom" constant="8" id="9HT-fw-FGf"/>
                             <constraint firstItem="nEB-A3-sAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EdV-2L-oOv"/>
+                            <constraint firstItem="L1J-M3-FYV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N3G-Nb-zPy"/>
+                            <constraint firstItem="XU5-kP-97a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nbj-XE-hrI"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="HM5-UI-kgl" secondAttribute="trailing" id="PLD-qq-IRF"/>
                             <constraint firstItem="XU5-kP-97a" firstAttribute="top" secondItem="HM5-UI-kgl" secondAttribute="bottom" constant="8" id="RUO-ci-yFN"/>
                             <constraint firstItem="nEB-A3-sAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2w-QJ-WYJ"/>
+                            <constraint firstItem="caI-Yo-5JC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WuJ-QD-rnX"/>
                             <constraint firstItem="HM5-UI-kgl" firstAttribute="top" secondItem="caI-Yo-5JC" secondAttribute="bottom" constant="8" id="dGl-t7-8jS"/>
                             <constraint firstItem="HM5-UI-kgl" firstAttribute="centerX" secondItem="caI-Yo-5JC" secondAttribute="centerX" id="jBt-2z-qDW"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="caI-Yo-5JC" secondAttribute="trailing" id="jGY-2V-DkE"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="L1J-M3-FYV" secondAttribute="trailing" id="jww-hw-mOV"/>
                             <constraint firstItem="L1J-M3-FYV" firstAttribute="centerX" secondItem="caI-Yo-5JC" secondAttribute="centerX" id="lDm-VJ-a0w"/>
                             <constraint firstItem="XU5-kP-97a" firstAttribute="centerX" secondItem="caI-Yo-5JC" secondAttribute="centerX" id="nwf-CB-qGK"/>
                             <constraint firstItem="caI-Yo-5JC" firstAttribute="top" secondItem="nEB-A3-sAJ" secondAttribute="bottom" constant="8" id="zHL-7A-dm5"/>
+                            <constraint firstItem="HM5-UI-kgl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zVW-Cj-Lv5"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="RO1-Ex-sq1" appends="YES" id="ITH-x8-3gY"/>
@@ -91,7 +100,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="374" y="314"/>
+            <point key="canvasLocation" x="373.60000000000002" y="313.49325337331339"/>
         </scene>
         <!--Map-->
         <scene sceneID="OfB-yG-RBA">

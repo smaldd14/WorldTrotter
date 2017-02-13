@@ -12,7 +12,7 @@ import MapKit
 class MapViewController: UIViewController {//MKMapViewDelegate
     var mapView: MKMapView!
     
-    //let locationManager = CLLocationManager()
+    let locationManager = CLLocationManager()
     
     override func loadView() {
         //Create a map view
@@ -20,7 +20,8 @@ class MapViewController: UIViewController {//MKMapViewDelegate
         
         //Set it as *the* view of this view controller
         view = mapView
-        //locationManager.requestAlwaysAuthorization()
+        
+        locationManager.requestAlwaysAuthorization()
         
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
