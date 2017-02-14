@@ -47,6 +47,19 @@ class MapViewController: UIViewController {//MKMapViewDelegate
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
         
+        let myLocation = UIButton()
+        
+        myLocation.setTitle("My Location", for: .normal)
+        myLocation.setTitleColor(UIColor.blue, for: .normal)
+        myLocation.translatesAutoresizingMaskIntoConstraints = false
+        myLocation.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -8).isActive = true
+        myLocation.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        
+        view.addSubview(myLocation)
+        myLocation.addTarget(self, action: #selector(MapViewController.mapTypeChanged(_:)), for: .valueChanged)
+        
+        
+        
     }
     
     override func viewDidLoad() {
@@ -67,6 +80,13 @@ class MapViewController: UIViewController {//MKMapViewDelegate
             break
         }
     }
+    
+    func myLocButtonTapped(_ button: UIButton) {
+        
+        mapView.showsUserLocation = true
+        mapView.setUserTrackingMode(.follow, animated: true)
+        print("MyLocation")
+    }
 }
 
 //*************THIS IS TO GET THE USERS LOCATION**************
@@ -81,7 +101,7 @@ class MapViewController: UIViewController {//MKMapViewDelegate
     self.mapView.delegate = self
     mapView.delegate = self same as above we think...
  
-    self.mapView.showsUserLocation = true
+    s   = true
     
     
 }
