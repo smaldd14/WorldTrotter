@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {//MKMapViewDelegate
+class MapViewController: UIViewController { //MKMapViewDelegate
     var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
@@ -49,14 +49,18 @@ class MapViewController: UIViewController {//MKMapViewDelegate
         
         let myLocation = UIButton()
         
+        
+        
         myLocation.setTitle("My Location", for: .normal)
         myLocation.setTitleColor(UIColor.blue, for: .normal)
         myLocation.translatesAutoresizingMaskIntoConstraints = false
+        myLocation.addTarget(self, action: #selector(myLocButtonTapped(_:)), for: .touchUpInside)
+        self.view.addSubview(myLocation)
         myLocation.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor, constant: -8).isActive = true
         myLocation.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         
-        view.addSubview(myLocation)
-        myLocation.addTarget(self, action: #selector(MapViewController.mapTypeChanged(_:)), for: .valueChanged)
+        
+        
         
         
         
@@ -83,9 +87,10 @@ class MapViewController: UIViewController {//MKMapViewDelegate
     
     func myLocButtonTapped(_ button: UIButton) {
         
+        print("MyLocation")
         mapView.showsUserLocation = true
         mapView.setUserTrackingMode(.follow, animated: true)
-        print("MyLocation")
+        
     }
 }
 

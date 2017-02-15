@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </webView>
-                    <tabBarItem key="tabBarItem" title="Web" image="CocoaHeads" id="GNz-ao-BwG"/>
+                    <tabBarItem key="tabBarItem" title="Web" image="ConvertIcon" id="GNz-ao-BwG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIz-2k-lL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +149,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CocoaHeads" width="280" height="255"/>
         <image name="ConvertIcon" width="49" height="33"/>
         <image name="MapIcon" width="49" height="33"/>
     </resources>
